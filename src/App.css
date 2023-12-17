@@ -36,3 +36,91 @@
     transform: rotate(360deg);
   }
 }
+/* CSS for ProductDetails component */
+.ui.grid.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.ui.placeholder.segment {
+  width: 80%;
+  margin: auto;
+}
+
+.column.lp {
+  flex: 1;
+}
+
+.column.rp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ui.vertical.animated.button {
+  margin-top: 20px;
+}
+
+/* CSS for ProductComponent component */
+.four.wide.column {
+  width: 25%;
+  padding: 10px;
+}
+
+.ui.link.cards {
+  width: 100%;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ProductComponent.css */
+
+.four.wide.column {
+  flex: 1 0 21%; 
+  margin: 15px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.four.wide.column:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.ui.link.cards .card .image img {
+  width: 100%;
+  height: auto;
+}
+
+.ui.link.cards .card .content .header {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ui.link.cards .card .content .meta.price {
+  color: green;
+  font-size: 16px;
+}
+
+.ui.link.cards .card .content .meta {
+  font-size: 14px;
+}

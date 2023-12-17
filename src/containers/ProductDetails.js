@@ -7,9 +7,9 @@ import { selectedProduct, removeselectedProduct } from "../redux/actions/product
 
 const ProductDetails = () => {
     const product = useSelector((state) => state.product);
-    const {image, title, price, category, description} = product ;
     const {productId} = useParams();
     const dispatch = useDispatch();
+    const {image, title, price,category, description} = product;
     console.log(product);
 
     const fetchProductDetail = async () => {
@@ -17,17 +17,17 @@ const ProductDetails = () => {
         .get(`https://fakestoreapi.com/products/${productId}`)
         .catch((err) => {
             console.log('Err ',err);
-        });
+        })
         dispatch(selectedProduct(response.data));
-    }
+    };
     useEffect(() => {
-        if(productId && productId !== ''){
-            fetchProductDetail();
-        }
+        if(productId && productId !== "")
+            fetchProductDetail(productId);
         return () => {
             dispatch(removeselectedProduct());
-        }
+        };
     }, [productId]);
+
     return (
         <div className="ui grid container">
     {Object.keys(product).length === 0 ? (

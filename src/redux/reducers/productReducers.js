@@ -9,7 +9,7 @@ export const productReducer = (state = initialState, {type,payload}) => {
         case ActionTypes.SET_PRODUCTS:
             return {
                 ...state,
-                ...payload,
+                products:payload,
             };
     
         default:
@@ -22,7 +22,7 @@ export const selectedProductReducer = (state={}, {type,payload}) => {
         case ActionTypes.SELECTED_PRODUCT:
             return {
                 ...state,
-                products : payload,
+                ...payload,
             }
         case ActionTypes.REMOVE_SELECTED_PRODUCT:
             return {}
