@@ -35,7 +35,7 @@ const ProductDetails = () => {
     ) : (
         <div className="ui placeholder segment">
             <div className="ui two column stackable center aligned grid">
-                <div className="ui vertical divider">AND</div>
+                <div className="ui vertical divider" id="and-text">AND</div>
                 <div className="middle aligned row">
                     <div className="column lp">
                         <img className="ui fluid image" src={image} />
@@ -45,7 +45,9 @@ const ProductDetails = () => {
                         <h2>
                             <a className="ui teal tag label">${price}</a>
                         </h2>
-                        <h3 className="ui brown block header">{category}</h3>
+                        <h3 className="ui brown block header">
+                            <div id="category-text">{category}</div>
+                        </h3>
                         <p>{description}</p>
                         <div className="ui vertical animated button" tabIndex="0">
                             <div className="hidden content">

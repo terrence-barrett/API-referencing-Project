@@ -44,10 +44,6 @@
   padding: 20px;
 }
 
-.ui.placeholder.segment {
-  width: 80%;
-  margin: auto;
-}
 
 .column.lp {
   flex: 1;
@@ -123,4 +119,25 @@
 
 .ui.link.cards .card .content .meta {
   font-size: 14px;
+}
+/* CSS for Product Details*/
+#category-text {
+  align-items: center;  
+  font-weight: bold;
+  transform: translateY(-10px);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+h3.ui.brown.header::before {
+  content: "Men's Clothing";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#and-text {
+  font-size: smaller;
+  font-weight: bold;
+  text-transform: capitalize;
 }
